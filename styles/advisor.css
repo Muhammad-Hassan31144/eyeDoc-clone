@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  background-color: var(--Background, #fcfdfe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+@media (max-width: 61.9375rem) {
+  .main-container {
+    padding: 0 1.25rem;
+  }
+}
+a {
+  text-decoration: none;
+}
+.kiosk-feature {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 76rem;
+  align-self: center;
+  margin: 6rem 0 3.6875rem;
+}
+
+@media (max-width: 61.9375rem) {
+  .kiosk-feature {
+    max-width: 100%;
+    margin: 2.5rem 0;
+  }
+}
+
+.feature-header h1 {
+  color: var(--black-font, #00030a);
+  text-align: center;
+  font: 600 2.25rem/156% Montserrat, sans-serif;
+  max-width: 100%;
+}
+
+.feature-description p {
+  color: var(--black-300, #3b3b3b);
+  text-align: center;
+  margin-top: 1.25rem;
+  font: 500 1.25rem/160% Montserrat, sans-serif;
+  max-width: 100%;
+}
+
+.advertiser-portal {
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--primary-600, #7f56d9);
+  background-color: var(--purple-600, #862996);
+  display: flex;
+  align-self: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 25.4375rem;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 0.75rem 5rem;
+}
+
+@media (max-width: 61.9375rem) {
+  .advertiser-portal {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0.4rem 1.25rem;
+  }
+  .feature-header h1 {
+    font-size: 1.8rem;
+  }
+  .feature-description p {
+    font: 500 1rem/160% Montserrat, sans-serif;
+  }
+}
+#mbl-br {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+.portal-link {
+  color: var(--Background, #fcfdfe);
+  align-self: center;
+  white-space: nowrap;
+  font: 600 1rem/150% Montserrat, sans-serif;
+}
+
+@media (max-width: 61.9375rem) {
+  .portal-link {
+    white-space: initial;
+  }
+}
+
+.feature-image {
+  aspect-ratio: 1.48;
+  object-fit: contain;
+  object-position: center;
+  width: 57rem;
+  overflow: hidden;
+  align-self: center;
+  margin-top: 2.75rem;
+  max-width: 100%;
+}
+
+@media (max-width: 61.9375rem) {
+  .feature-image {
+    margin-top: 2.5rem;
+  }
+}
+
+.feature-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 1.625rem;
+  flex-grow: 1;
+  padding: 0 1.2rem;
+  max-width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 0rem;
+}
+
+@media (max-width: 61.9375rem) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column-content {
+  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: lightblue;
+  }
+  .column {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .column-content {
+    margin: 1.2rem 0;
+  }
+  .feature-columns {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rem 0.0625rem 0.125rem 0rem rgba(16, 24, 40, 0.05);
+  overflow: hidden;
+  align-self: center;
+  max-width: 100%;
+}
+
+.column-text h2 {
+  align-self: stretch;
+  color: var(--black-font, #00030a);
+  text-align: center;
+  font: 600 1.25rem/160% Montserrat, sans-serif;
+  max-width: 100%;
+}
+
+.column-text p {
+  align-self: stretch;
+  color: var(--black-300, #3b3b3b);
+  text-align: center;
+  margin-top: 0.5rem;
+  font: 400 1rem/150% Montserrat, sans-serif;
+  max-width: 100%;
+}
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  animation: rotateImages infinite 5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rotateImages {
+  0%,
+  100% {
+    content: url("../assets/adv1.webp");
+  }
+  33% {
+    content: url("../assets/adv2.webp");
+  }
+  66% {
+    content: url("../assets/adv3.webp");
+  }
+}

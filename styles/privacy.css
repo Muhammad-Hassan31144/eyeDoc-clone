@@ -1,0 +1,126 @@
+body {
+  background-color: #fbfafd;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 80px 53px;
+}
+@media (max-width: 991px) {
+  .container {
+    padding: 20px 20px;
+  }
+  #text {
+    font-size: 16px;
+  }
+}
+#content {
+  width: 960px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header {
+  text-align: center;
+}
+#title {
+  color: #862996;
+  font: 600 16px Montserrat, sans-serif;
+}
+#subtitle {
+  color: #00030a;
+  margin-top: 12px;
+  font: 700 36px Montserrat, sans-serif;
+}
+#text {
+  color: #6e6e6e;
+  text-align: center;
+  margin-top: 24px;
+  max-width: 768px;
+  font: 400 20px/160% Montserrat, sans-serif;
+}
+.search-box {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  position: relative;
+}
+@media only screen and (max-width: 766px) {
+  .search-box {
+    width: 100%;
+  }
+}
+
+.search-box input {
+  border-radius: 8px;
+  border: 1px solid #b7b7b7;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: #fcfdfe;
+  margin-top: 25px;
+  width: 320px;
+  max-width: 100%;
+  padding: 12px 14px;
+  flex-grow: 1;
+}
+
+.search-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  margin-top: 12px;
+  margin-right: 10px; /* Add margin to separate icon from input */
+  position: absolute; /* Absolute positioning */
+  right: 14px; /* Adjust right position */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+}
+
+.search-label {
+  color: #b7b7b7;
+  font: 400 16px/150% Montserrat, sans-serif;
+  flex-grow: 1;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: #3b3b3b;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.header-header {
+  background-color: #fcfdfe;
+  padding: 40px 80px 97px;
+  text-align: center;
+}
+h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+p {
+  color: #00030a;
+  font: 400 16px/150% Montserrat, sans-serif;
+}
+section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+h2 {
+  font-weight: 600;
+  color: #3b3b3b;
+  font-size: 26px;
+  font-family: Montserrat, sans-serif;
+}
+h3 {
+  font-weight: 500;
+}
+.contact-info {
+  color: #862996;
+  font-weight: 500;
+}

@@ -1,0 +1,217 @@
+body {
+  background-color: var(--Background, #fcfdfe);
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 80px;
+}
+html {
+  overflow-x: hidden;
+}
+@media (max-width: 991px) {
+  body {
+    padding: 0 20px;
+  }
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 18px 0;
+}
+
+header h1 {
+  color: var(--black-font, #00030a);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 127%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section img {
+  aspect-ratio: 2.32;
+  object-fit: contain;
+  object-position: center;
+  width: 139px;
+  overflow: hidden;
+  align-self: center;
+  max-width: 100%;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  color: var(--black-font, #00030a);
+  /* text-align: center; */
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 127%;
+}
+
+.form-field input {
+  color: var(--black-font, #00030a);
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300, #d0d5dd);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: var(--base-white, #fff);
+  margin-top: 6px;
+  width: 350px;
+  flex-grow: 1;
+  padding: 10px 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.requirements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+.requirement {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  /* padding: 4px 0; */
+}
+
+.requirement img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  margin-right: 3px;
+  overflow: hidden;
+  align-self: start;
+  max-width: 100%;
+}
+#signup-button {
+  color: var(--Background, #fcfdfe);
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid var(--primary-600, #7f56d9);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: var(--purpel-600, #862996);
+  padding: 10px 20px;
+  font: 600 16px/150% Montserrat, sans-serif;
+}
+
+.requirement p {
+  color: var(--black-300, #3b3b3b);
+  align-self: stretch;
+  flex-grow: 1;
+  flex-basis: auto;
+  font: 400 14px/171% Montserrat, sans-serif;
+}
+.google-signup {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+#g-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  overflow: hidden;
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .signup-button {
+    padding: 0 20px;
+  }
+}
+
+.login-button {
+  color: var(--black-300, #862996);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+}
+
+.social-login {
+  /* justify-content: space-between; */
+  border-radius: 8px;
+  border: 1px solid var(--gray-300, #d0d5dd);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: var(--base-white, #fff);
+  display: flex;
+  margin-top: 16px;
+  gap: 12px;
+  width: inherit;
+  padding: 10px 78px;
+}
+
+@media (max-width: 991px) {
+  .social-login button {
+    padding: 0 20px;
+  }
+}
+
+.end {
+  justify-content: center;
+  display: flex;
+  margin-top: 32px;
+  max-width: 100%;
+  gap: 4px;
+}
+
+.end p {
+  color: var(--black-300, #3b3b3b);
+  font: 400 14px/171% Montserrat, sans-serif;
+}
+
+.end .login-button {
+  color: var(--purpel-600, #862996);
+  white-space: nowrap;
+  font: 700 14px/171% Montserrat, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .end .login-button {
+    white-space: initial;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+}

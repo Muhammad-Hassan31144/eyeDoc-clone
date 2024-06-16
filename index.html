@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header-footer.css" />
+    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="16x16 32x32 48x48"
+      href="favicon.ico?"
+      type="image/x-icon"
+    />
+    <title>iDoc</title>
+    <style>
+      /* html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      } */
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        /* text-align: center; */
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0 80px; */
+      }
+
+      .swiper-slide img {
+        display: block;
+        aspect-ratio: 1;
+        width: 100%;
+        object-position: center;
+        height: auto;
+        object-fit: cover;
+        /* background-color: white; */
+      }
+      #not-cool {
+        aspect-ratio: 0.8;
+        width: 80%;
+        object-fit: contain;
+        object-position: center;
+        padding-left: 100px;
+      }
+      /* @media (min-width: 1440px) {
+        #not-cool {
+          aspect-ratio: 0.9;
+          width: 70%;
+          object-position: center;
+          object-fit: contain;
+        }
+      } */
+      @media (max-width: 991px) {
+        .swiper-slide img {
+          width: 100%;
+        }
+      }
+      .hero-wrapper-big {
+        display: flex;
+        gap: 10px;
+        max-width: 1440px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 80px;
+        background-color: #fbfafd;
+        overflow: hidden;
+      }
+      .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        letter-spacing: -0.9px;
+        align-self: stretch;
+        width: 100%;
+        font: 700 2.1rem/60px Montserrat, sans-serif;
+      }
+      @media (max-width: 991px) {
+        .hero-text {
+          font: 700 1.3rem/50px Montserrat, sans-serif;
+          min-width: 100%;
+        }
+      }
+      #text-sm,
+      #text-smm,
+      #text-smmm {
+        font: 400 18px/30px Montserrat, sans-serif;
+        color: black;
+        white-space: normal;
+      }
+      @media (max-width: 768px) {
+        .hero-wrapper-big {
+          flex-direction: column;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 15px;
+        }
+        #not-cool {
+          padding-left: 30px;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-in">
+        <div class="section-left">
+          <div class="top-section">
+            <a href="index.html">
+              <img loading="lazy" src="assets/group-34@2x.png" class="logo" />
+            </a>
+            <nav class="nav-links" id="nav-links">
+              <div class="menu">
+                <button id="exit-button" style="height: 32px; width: 32px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="2rem"
+                    width="2rem"
+                    viewBox="0 0 384 512"
+                  >
+                    <style>
+                      svg {
+                        fill: #863396;
+                      }
+                    </style>
+                    <path
+                      d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <a
+                href="/index.html"
+                class="nav-link active"
+                onclick="highlightLink(this)"
+                >Home</a
+              >
+              <a
+                href="company.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Company</a
+              >
+              <a
+                href="feature.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Features</a
+              >
+              <a href="blog.html" class="nav-link" onclick="highlightLink(this)"
+                >Blogs</a
+              >
+              <a
+                href="contact.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="section-right" id="section-right">
+          <a href="download.html" class="nav-link" onclick="highlightLink(this)"
+            >Download the App</a
+          >
+          <a href="advisor.html" class="download-app active">
+            Advertiser Portal</a
+          >
+        </div>
+        <div class="menu">
+          <button id="menu-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2.5rem"
+              width="2.5rem"
+              viewBox="0 0 448 512"
+            >
+              <style>
+                svg {
+                  fill: #862996;
+                }
+              </style>
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero -->
+
+    <div class="hero-wrapper-big">
+      <div dir="rtl" class="swiper mySwipera">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero-text">
+              <h3>
+                Empower Your Health Journey
+                <br id="big-sec" />
+                with our
+                <span style="color: rgba(134, 41, 150, 1)"
+                  >iDoc Mobile App</span
+                >
+              </h3>
+              <p id="text-sm">
+                Offering continuous wellness management in the palm of your hand
+              </p>
+            </div>
+          </div>
+          <style>
+            #big-sec {
+              display: none;
+              @media (min-width: 1442px) {
+                display: block;
+              }
+            }
+          </style>
+          <div class="swiper-slide">
+            <div class="hero-text">
+              <h3>
+                Navigate Your Wellness through touchpoint of care with our
+                Self-Service
+                <span style="color: rgba(134, 41, 150, 1)"
+                  >Health Check Kiosk</span
+                >
+              </h3>
+              <p id="text-smm">
+                Ensuring that your health is always within reach
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-text">
+              <h3>
+                Connect and Elevate Your Health Offerings by utilizing our
+                <span style="color: rgba(134, 41, 150, 1)">Ads Portal</span>
+              </h3>
+              <p id="text-smmm">
+                Creating a network that brings healthcare products and services
+                to the right audience
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/Banner image.png" alt="Slides" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/Component-10.webp" alt="Slides" id="not-cool" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/Banner1.webp" alt="Slides" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="whoweawr" class="div">
+      <div class="intro">
+        <div class="section">
+          <div class="title">Who we are</div>
+          <div class="description">
+            At iDoc, we believe that healthcare should be convenient and
+            accessible to everyone. We believe in building long-term
+            relationships with our patients, getting to know their medical
+            history and unique needs, so that we can provide tailored care
+            that's right for them.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="div">
+      <div class="intro-list">
+        <div class="col">
+          <div class="item">
+            <div class="div-13">
+              <img loading="lazy" src="icons/map 1.png" class="img" />
+            </div>
+            <div class="content">
+              <div class="content-title">Health Tracking</div>
+              <div class="content-description">
+                iDoc offers health tracking features that help you manage your
+                health.
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="div-13">
+              <img loading="lazy" src="icons/hospital-user 2.png" class="img" />
+            </div>
+            <div class="content">
+              <div class="content-title">Personalized Care</div>
+              <div class="content-description">
+                We take time to get to know you & provide tailored care to meet
+                individual needs.
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="div-13">
+              <img
+                loading="lazy"
+                src="icons/hand-holding-medical 1.png"
+                class="img"
+              />
+            </div>
+            <div class="content">
+              <div class="content-title">Healthcare Tips</div>
+              <div class="content-description">
+                iDoc provides medical advice and healthy lifestyle tips to
+                improve your living.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="item">
+            <div class="div-13">
+              <img loading="lazy" src="icons/heart-rate 1.png" class="img" />
+            </div>
+            <div class="content">
+              <div class="content-title">Free Healthcare</div>
+              <div class="content-description">
+                iDoc aims to provide free access to quality healthcare to
+                everyone.
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="div-13">
+              <img loading="lazy" src="icons/treatment 1.png" class="img" />
+            </div>
+            <div class="content">
+              <div class="content-title">Convenient Access to Healthcare</div>
+              <div class="content-description">
+                With iDoc, you can access healthcare from the comfort of your
+                own home.
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="div-13">
+              <img loading="lazy" src="icons/clock 1.png" class="img" />
+            </div>
+            <div class="content">
+              <div class="content-title">24/7 Availability</div>
+              <div class="content-description">
+                iDoc is available 24/7, so you can get the care you need when
+                you need it.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="div">
+      <div class="benefits">
+        <div class="benefit">
+          <div class="ben-ten">
+            <img loading="lazy" src="icons/icon (2).svg" class="benefit-img" />
+            <div class="benefit-title">20+</div>
+          </div>
+          <div class="ben-tena">
+            <div class="benefit-text">Health Measurements in Kiosk</div>
+          </div>
+        </div>
+        <div class="benefit-divider"></div>
+        <div class="benefit">
+          <div class="ben-ten">
+            <img loading="lazy" src="icons/icon (3).svg" class="benefit-img" />
+            <div class="benefit-title">6000</div>
+          </div>
+          <div class="ben-tena">
+            <div class="benefit-text">
+              Covered Conditions in Symptom Checker
+            </div>
+          </div>
+        </div>
+        <div class="benefit-divider"></div>
+        <div class="benefit">
+          <div class="ben-ten">
+            <img loading="lazy" src="icons/icon (5).svg" class="benefit-img" />
+            <div class="benefit-title">90</div>
+          </div>
+          <div class="ben-tena">
+            <div class="benefit-text">
+              Seconds for Accurate Differential Diagnosis
+            </div>
+          </div>
+        </div>
+        <div class="benefit-divider"></div>
+        <div class="benefit">
+          <div class="ben-ten">
+            <img loading="lazy" src="icons/icon (4).svg" class="benefit-img" />
+            <div class="benefit-title">100</div>
+          </div>
+          <div class="ben-tena">
+            <div class="benefit-text">
+              Diet, Exercise Plans in Health and Fitness
+            </div>
+          </div>
+        </div>
+        <div class="benefit-divider"></div>
+        <div class="benefit">
+          <div class="ben-ten">
+            <img loading="lazy" src="icons/icon (1).svg" class="benefit-img" />
+            <div class="benefit-title">100,000+</div>
+          </div>
+          <div class="ben-tena">
+            <div class="benefit-text">Nutrition and Recipes Data</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="div">
+      <div class="div-3">
+        <div class="column">
+          <div class="div-4">
+            <div class="div-5">
+              <div class="div-6">App Features</div>
+              <div class="div-7">Health Check Kiosk</div>
+            </div>
+            <div class="div-8">
+              Discover a new way to stay in tune with your health using our
+              innovative Health Check Kiosk feature.It allows you to monitor
+              crucial health vitals such as glucose levels, Body Mass Index
+              (BMI), height, weight, uric acid levels, oxygen saturation (SpO2),
+              heart rate, blood pressure, and more. Experience immediate,
+              accurate, and reliable results, all presented through an
+              intuitive, user-friendly interface.
+            </div>
+            <div class="div-9">
+              <div class="div-10">Key Highlights:</div>
+              <div class="div-11">
+                <div class="div-12">
+                  <div class="div-13">
+                    <img
+                      id="sm-img"
+                      loading="lazy"
+                      src="icons/tool-crop 1.png"
+                      class="img"
+                    />
+                  </div>
+                  <div class="div-14">
+                    Monitors a wide array of health parameters, including blood
+                    pressure, temperature, glucose, BMI, uric acid levels, and
+                    more
+                  </div>
+                </div>
+
+                <div class="div-12">
+                  <div class="div-13">
+                    <img
+                      loading="lazy"
+                      src="icons/bars-filter 1.png"
+                      class="img"
+                    />
+                  </div>
+                  <div class="div-14">Provides real-time, reliable results</div>
+                </div>
+
+                <div class="div-12">
+                  <div class="div-13">
+                    <img
+                      loading="lazy"
+                      src="icons/sparkles 1.png"
+                      class="img"
+                    />
+                  </div>
+                  <div class="div-14">
+                    Features a user-friendly, easy-to-understand interfaces
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <img
+            loading="lazy"
+            src="assets/Frame 1171275732.webp"
+            class="img-2"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="div">
+      <div class="div-3 rev">
+        <div class="column-2">
+          <img loading="lazy" src="assets/image1_2x.webp" class="img-2" />
+        </div>
+        <div class="column">
+          <div class="div-4">
+            <div class="div-5">
+              <div class="div-6">App Features</div>
+              <div class="div-7">Symptom Checker</div>
+            </div>
+            <div class="div-8">
+              Navigate your health uncertainties with our Symptom Checker
+              feature. This innovative feature allows you to input your symptoms
+              and receive immediate, reliable, and comprehensive insights.
+              Whether you're dealing with common ailments or less familiar
+              conditions, our Symptom Checker stands as your digital health
+              ally, guiding you towards a better understanding of your health.
+            </div>
+            <div class="div-9">
+              <div class="div-10">Key Highlights:</div>
+              <div class="div-11">
+                <div class="div-12">
+                  <div class="div-13">
+                    <img
+                      loading="lazy"
+                      src="icons/comment-question 1.png"
+                      class="img"
+                    />
+                  </div>
+                  <div class="div-14">
+                    Ask few questions to analyze your symptoms
+                  </div>
+                </div>
+
+                <div class="div-12">
+                  <div class="div-13">
+                    <img
+                      loading="lazy"
+                      src="icons/heart-rate 1.png"
+                      class="img"
+                    />
+                  </div>
+                  <div class="div-14">
+                    Allows users to check and understand a wide range of
+                    symptoms
+                  </div>
+                </div>
+
+                <div class="div-12">
+                  <div class="div-13">
+                    <img
+                      loading="lazy"
+                      src="icons/hand-holding-medical 1.png"
+                      class="img"
+                    />
+                  </div>
+                  <div class="div-14">
+                    Provides immediate and reliable health insights
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="div">
+      <div class="div-3">
+        <div class="column">
+          <div class="div-4">
+            <div class="div-5">
+              <div class="div-6">App Features</div>
+              <div class="div-7">Medical Encyclopedia</div>
+            </div>
+            <div class="div-8">
+              Enhance your health literacy with our comprehensive Medical
+              Encyclopedia feature. This feature offers an extensive repository
+              of medical content, delivering valuable insights about various
+              diseases and conditions. It's your personal, pocket-sized medical
+              library, available at the tap of a button, empowering you with the
+              knowledge you need to better understand and manage your health.
+            </div>
+            <div class="div-9">
+              <div class="div-10">Key Highlights:</div>
+              <div class="div-11">
+                <div class="div-12">
+                  <div class="div-13">
+                    <img loading="lazy" src="icons/ribbon 1.png" class="img" />
+                  </div>
+                  <div class="div-14">
+                    Extensive library of medical content covering a wide range
+                    of diseases and conditions
+                  </div>
+                </div>
+
+                <div class="div-12">
+                  <div class="div-13">
+                    <img
+                      loading="lazy"
+                      src="icons/file-medical-alt-2 1.png"
+                      class="img"
+                    />
+                  </div>
+                  <div class="div-14">
+                    Accessible anytime, anywhere, providing users with crucial
+                    health information at their fingertips
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <img loading="lazy" src="assets/image2_2x.webp" class="img-2" />
+        </div>
+      </div>
+    </section>
+
+    <section class="div">
+      <div class="div-3 rev">
+        <div class="column-2">
+          <img loading="lazy" src="assets/image3_2x.webp" class="img-2" />
+        </div>
+        <div class="column">
+          <div class="div-4">
+            <div class="div-5">
+              <div class="div-6">App Features</div>
+              <div class="div-7">Health and Fitness</div>
+            </div>
+            <div class="div-8">
+              Experience a comprehensive approach to health and fitness with our
+              app's inclusive feature set. This all-encompassing functionality
+              allows you to delve into the nutritional data of over 100,000 food
+              items, explore a vast array of recipes, custom diet plans,
+              discover personalized workout plans, and even locate gyms in your
+              vicinity. It's your all-in-one companion for a healthier
+              lifestyle, combining nutrition, fitness, and convenience to
+              empower your wellness journey.
+            </div>
+            <div class="div-9">
+              <div class="div-10">Key Highlights:</div>
+              <div class="div-11">
+                <div class="div-12">
+                  <div class="div-13">
+                    <img loading="lazy" src="icons/salad 1.png" class="img" />
+                  </div>
+                  <div class="div-14">
+                    Nutritional and Recipe Data: Features a comprehensive
+                    database of nutritional information for over 100,000 food
+                    items and a diverse collection of healthy recipes.
+                  </div>
+                </div>
+
+                <div class="div-12">
+                  <div class="div-13">
+                    <img loading="lazy" src="icons/tomato 1.png" class="img" />
+                  </div>
+                  <div class="div-14">
+                    Custom Diet Plans: Provides personalized nutrition
+                    strategies to help guide your dietary choices.
+                  </div>
+                </div>
+
+                <div class="div-12">
+                  <div class="div-13">
+                    <img
+                      loading="lazy"
+                      src="icons/biking-mountain 1.png"
+                      class="img"
+                    />
+                  </div>
+                  <div class="div-14">
+                    Workout Plans: Offers a variety of exercise routines
+                    tailored to your needs and preferences.
+                  </div>
+                </div>
+
+                <div class="div-12">
+                  <div class="div-13">
+                    <img loading="lazy" src="icons/gym 1.png" class="img" />
+                  </div>
+                  <div class="div-14">
+                    Gym Locator: Provides a convenient tool to discover gyms
+                    near your location, facilitating a seamless integration of
+                    fitness into your routine.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="extra"></div>
+    <section class="email-holder">
+      <div class="newsletter-section">
+        <div class="newsletter-container">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/221eb4d9-fefb-46be-b7d6-a3374be56932?apiKey=28f1f8a313bb45b386c22db6f6b03ead&"
+            class="newsletter-image"
+          />
+          <div class="newsletter-content">
+            <div class="newsletter-title">Get notified for our newsletter</div>
+            <div class="newsletter-description">
+              Be the first to know about our insights and blogs.
+            </div>
+          </div>
+          <div class="newsletter-subscribe">
+            <input
+              class="newsletter-email-input"
+              placeholder="Enter your email"
+            />
+            <a href="#" class="newsletter-notify-button">Notify me</a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <section class="div">
+      <div class="d-app">
+        <div class="div-3">
+          <div class="column">
+            <div class="div-4">
+              <div class="d-text">
+                Download the iDoc App from the App Store or Google Play
+              </div>
+              <img
+                loading="lazy"
+                src="assets/static-qr-code-680b5374a75de3648b053444f7d8a271 2.webp"
+                class="d-img-2"
+              />
+              <div class="d-img">
+                <a href="#"
+                  ><img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/315334ac-e795-487c-8f3c-28a4e7f4fabe?"
+                    class="d-img-3"
+                /></a>
+                <a href="#"
+                  ><img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/2dde71ba-a103-4fb4-84a4-52abb6a83a12?"
+                    class="d-img-3"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="column-2-d-app">
+            <img loading="lazy" src="assets/Content.webp" class="d-img-4" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="foooter">
+      <footer class="footer">
+        <div class="f-container-a">
+          <a href="index.html">
+            <img
+              loading="lazy"
+              src="assets/group-34@2x.png"
+              class="footer-img"
+            />
+          </a>
+          <p class="footer-text">
+            iDoc is empowering personalized care through AI-driven telemedicine
+            and secure self-screening.
+          </p>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/mingcute_linkedin-line.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/simple-icons_x.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/Social link.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/Social link-1.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/line-md_youtube.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-container">
+          <div class="footer-column">
+            <h5>Products</h5>
+            <ul class="footer-column-list">
+              <li><a href="./feature.html">Features</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Company</h5>
+            <ul class="footer-column-list">
+              <li><a href="./company.html">About Us</a></li>
+              <li><a href="./advisor.html">Advertiser Portal</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Resources</h5>
+            <ul class="footer-column-list">
+              <li><a href="./blog.html">Blogs</a></li>
+              <li><a href="./faq.html">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Legal</h5>
+            <ul class="footer-column-list">
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="./terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        <div class="footer-bottom-1"></div>
+        <div class="footer-bottom-2">&copy; 2023 iDoc, All rights reserved</div>
+      </div>
+    </div>
+    <script>
+      const toggleBtn = document.getElementById("menu-button");
+      const navLinks = document.getElementById("nav-links");
+      toggleBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+      const toggleBtnn = document.getElementById("exit-button");
+      const navLinkss = document.getElementById("nav-links");
+      toggleBtnn.addEventListener("click", () => {
+        navLinkss.classList.toggle("show");
+      });
+      const toleBtn = document.getElementById("menu-button");
+      const nLinks = document.getElementById("section-right");
+      toleBtn.addEventListener("click", () => {
+        nLinks.classList.toggle("current");
+      });
+      const togleBtnn = document.getElementById("exit-button");
+      const ninkss = document.getElementById("section-right");
+      togleBtnn.addEventListener("click", () => {
+        ninkss.classList.toggle("current");
+      });
+      function highlightLink(link) {
+        // Remove 'active' class from all links
+        var links = document.querySelectorAll(" a.nav-link");
+        links.forEach(function (link) {
+          link.classList.remove("active");
+        });
+
+        // Add 'active' class to the clicked link
+        link.classList.add("active");
+      }
+      // JavaScript code to activate counter on scroll
+      const benefits = document.querySelectorAll(".benefit-title");
+
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      benefits.forEach((benefit) => {
+        observer.observe(benefit);
+      });
+
+      function startCounter(element) {
+        const maxValue = parseInt(element.textContent.replace(/,/g, "")); // Remove commas and convert to integer
+        let currentValue = 0;
+
+        const speed = maxValue > 1000 ? 13 : 26; // Adjust the speed based on the maxValue
+
+        const counterInterval = setInterval(() => {
+          element.textContent = numberWithCommas(currentValue); // Add commas to the counter
+          currentValue += Math.ceil(maxValue / 100); // Increment by a percentage of maxValue
+
+          if (currentValue > maxValue) {
+            element.textContent = numberWithCommas(maxValue); // Set final value
+            clearInterval(counterInterval);
+          }
+        }, speed); // You can experiment with different values for speed
+      }
+
+      // Helper function to add commas to large numbers
+      function numberWithCommas(x) {
+        const formattedNumber = x
+          .toString()
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        return `${formattedNumber}+`;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Function to handle intersection changes for Swiper 1
+      function handleIntersection1(entries, observer) {
+        entries.forEach((entry) => {
+          const swiperInstance = entry.target.swiper;
+
+          if (entry.isIntersecting) {
+            swiperInstance.autoplay.start();
+          } else {
+            swiperInstance.autoplay.stop();
+          }
+        });
+      }
+
+      const observer1 = new IntersectionObserver(handleIntersection1, {
+        threshold: 0.5,
+      });
+
+      const swiper1 = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
+      document.querySelector(".mySwiper").swiper = swiper1;
+
+      observer1.observe(document.querySelector(".mySwiper"));
+    </script>
+
+    <!-- Script for Swiper instance 2 and Intersection Observer 2 -->
+    <script>
+      function handleIntersection2(entries, observer) {
+        entries.forEach((entry) => {
+          const swiperInstance = entry.target.swiper;
+
+          if (entry.isIntersecting) {
+            swiperInstance.autoplay.start();
+          } else {
+            swiperInstance.autoplay.stop();
+          }
+        });
+      }
+
+      const observer2 = new IntersectionObserver(handleIntersection2, {
+        threshold: 0.5,
+      });
+
+      const swiper2 = new Swiper(".mySwipera", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        direction: "horizontal",
+      });
+
+      document.querySelector(".mySwipera").swiper = swiper2;
+
+      observer2.observe(document.querySelector(".mySwipera"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Advisor Portal</title>
+    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="16x16 32x32 48x48"
+      href="favicon.ico?"
+      type="image/x-icon"
+    />
+    <!-- <link rel="mask-icon" href="/icons/heart icon.svg" color="#000000" /> -->
+    <link rel="stylesheet" href="./styles/advisor.css" />
+    <link rel="stylesheet" href="./styles/header-footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-in">
+        <div class="section-left">
+          <div class="top-section">
+            <a href="index.html">
+              <img loading="lazy" src="assets/group-34@2x.png" class="logo" />
+            </a>
+            <nav class="nav-links" id="nav-links">
+              <div class="menu">
+                <button id="exit-button" style="height: 32px; width: 32px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="2rem"
+                    width="2rem"
+                    viewBox="0 0 384 512"
+                  >
+                    <style>
+                      svg {
+                        fill: #863396;
+                      }
+                    </style>
+                    <path
+                      d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <a
+                href="index.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Home</a
+              >
+              <a
+                href="company.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Company</a
+              >
+              <a
+                href="feature.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Features</a
+              >
+              <a href="blog.html" class="nav-link" onclick="highlightLink(this)"
+                >Blogs</a
+              >
+              <a
+                href="contact.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="section-right" id="section-right">
+          <a href="download.html" class="nav-link" onclick="highlightLink(this)"
+            >Download the App</a
+          >
+          <a href="advisor.html" class="download-app active">
+            Advertiser Portal</a
+          >
+        </div>
+        <div class="menu">
+          <button id="menu-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2.5rem"
+              width="2.5rem"
+              viewBox="0 0 448 512"
+            >
+              <style>
+                svg {
+                  fill: #862996;
+                }
+              </style>
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="main-container">
+      <div class="kiosk-feature">
+        <div class="feature-header">
+          <h1>Targeted Kiosk Advertising Made Simple</h1>
+        </div>
+        <div class="feature-description">
+          <p>
+            Join iDoc Ads Portal today and watch your campaigns come to life in
+            front of your target audience. <br id="mbl-br" />
+            <span style="color: rgba(134, 41, 150, 1)">Get started now!</span>
+          </p>
+        </div>
+        <div class="advertiser-portal">
+          <a href="#" class="portal-link">Go To Advertiser Portal</a>
+        </div>
+        <div class="hero-image">
+          <!-- <img loading="lazy" src="assets/adv.webp" class="feature-image" /> -->
+        </div>
+        <div class="feature-columns">
+          <div class="column">
+            <div class="column-content">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a64ada9a-cb01-4992-9c57-299f2b8ae881?"
+                class="icon"
+              />
+              <div class="column-text">
+                <h2>Seamless Ad Placement</h2>
+                <p>
+                  Creating an account on iDoc Ads Portal is your gateway to
+                  hassle-free advertising. You're just a few clicks away from
+                  reaching your target audience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-content">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/fa0bddd4-18ef-4d35-9639-4af09f4dd8c4?"
+                class="icon"
+              />
+              <div class="column-text">
+                <h2>Prime Locations</h2>
+                <p>
+                  Our kiosks are strategically placed in malls, hypermarkets,
+                  pharmacies, and high-traffic areas, ensuring maximum exposure
+                  for your ads.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-content">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/076378bc-4549-42b7-922b-595915cfd540?"
+                class="icon"
+              />
+              <div class="column-text">
+                <h2>Choose Your Screen</h2>
+                <p>
+                  Select the perfect kiosk screen for your campaign. With a
+                  variety of options, you can tailor your ads to specific
+                  demographics and locations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-columns">
+          <div class="column">
+            <div class="column-content">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4be1ee7-d535-4b38-a7b2-e5db3912b36e?"
+                class="icon"
+              />
+              <div class="column-text">
+                <h2>ShareEasy Material Upload</h2>
+                <p>
+                  Upload your ad materials effortlessly. Our user-friendly
+                  interface makes it simple to bring your creative vision to
+                  life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-content">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/7646eabc-bc46-4ca0-b8bc-fad77a0004ae?"
+                class="icon"
+              />
+              <div class="column-text">
+                <h2>Hassle-Free Payments</h2>
+                <p>
+                  Submit payments securely within the portal. We offer flexible
+                  payment options to suit your budget and campaign goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-content">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/539b5b1d-4215-4fbe-ac16-79c22d502e7a?"
+                class="icon"
+              />
+              <div class="column-text">
+                <h2>Queue Management</h2>
+                <p>
+                  Once your ad request is submitted, our expert team reviews it
+                  for approval. Your ad will stay in the queue until your
+                  scheduled time slot.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="foooter">
+      <footer class="footer">
+        <div class="f-container-a">
+          <img loading="lazy" src="assets/group-34@2x.png" class="footer-img" />
+          <a href="index.html"></a>
+          <p class="footer-text">
+            iDoc is empowering personalized care through AI-driven telemedicine
+            and secure self-screening.
+          </p>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/mingcute_linkedin-line.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/simple-icons_x.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/Social link.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/Social link-1.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/line-md_youtube.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-container">
+          <div class="footer-column">
+            <h5>Products</h5>
+            <ul class="footer-column-list">
+              <li><a href="./feature.html">Features</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Company</h5>
+            <ul class="footer-column-list">
+              <li><a href="./company.html">About Us</a></li>
+              <li><a href="./advisor.html">Advertiser Portal</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Resources</h5>
+            <ul class="footer-column-list">
+              <li><a href="./blog.html">Blogs</a></li>
+              <li><a href="./faq.html">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Legal</h5>
+            <ul class="footer-column-list">
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="./terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        <div class="footer-bottom-1"></div>
+        <div class="footer-bottom-2">&copy; 2023 iDoc, All rights reserved</div>
+      </div>
+    </div>
+    <script>
+      const toggleBtn = document.getElementById("menu-button");
+      const navLinks = document.getElementById("nav-links");
+      toggleBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+      const toggleBtnn = document.getElementById("exit-button");
+      const navLinkss = document.getElementById("nav-links");
+      toggleBtnn.addEventListener("click", () => {
+        navLinkss.classList.toggle("show");
+      });
+      const toleBtn = document.getElementById("menu-button");
+      const nLinks = document.getElementById("section-right");
+      toleBtn.addEventListener("click", () => {
+        nLinks.classList.toggle("current");
+      });
+      const togleBtnn = document.getElementById("exit-button");
+      const ninkss = document.getElementById("section-right");
+      togleBtnn.addEventListener("click", () => {
+        ninkss.classList.toggle("current");
+      });
+      function highlightLink(link) {
+        // Remove 'active' class from all links
+        var links = document.querySelectorAll(" a.nav-link");
+        links.forEach(function (link) {
+          link.classList.remove("active");
+        });
+
+        // Add 'active' class to the clicked link
+        link.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

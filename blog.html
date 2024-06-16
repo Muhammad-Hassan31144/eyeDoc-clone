@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./styles/blog.css" />
+
+    <link rel="stylesheet" href="./styles/header-footer.css" />
+    <title>Blogs</title>
+    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="16x16 32x32 48x48"
+      href="favicon.ico?"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-in">
+        <div class="section-left">
+          <div class="top-section">
+            <a href="index.html">
+              <img loading="lazy" src="assets/group-34@2x.png" class="logo" />
+            </a>
+            <nav class="nav-links" id="nav-links">
+              <div class="menu">
+                <button id="exit-button" style="height: 32px; width: 32px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="2rem"
+                    width="2rem"
+                    viewBox="0 0 384 512"
+                  >
+                    <style>
+                      svg {
+                        fill: #863396;
+                      }
+                    </style>
+                    <path
+                      d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <a
+                href="index.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Home</a
+              >
+              <a
+                href="company.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Company</a
+              >
+              <a
+                href="feature.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Features</a
+              >
+              <a
+                href="blog.html"
+                class="nav-link active"
+                onclick="highlightLink(this)"
+                >Blogs</a
+              >
+              <a
+                href="contact.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="section-right" id="section-right">
+          <a href="download.html" class="nav-link" onclick="highlightLink(this)"
+            >Download the App</a
+          >
+          <a href="advisor.html" class="download-app active">
+            Advertiser Portal</a
+          >
+        </div>
+        <div class="menu">
+          <button id="menu-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2.5rem"
+              width="2.5rem"
+              viewBox="0 0 448 512"
+            >
+              <style>
+                svg {
+                  fill: #862996;
+                }
+              </style>
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div id="id-main">
+      <div class="boss-cont">
+        <div class="idoc-blogs">
+          <h2>iDoc blogs</h2>
+          <p>
+            Subscribe to learn about our new articles, news and the latest
+            updates.
+          </p>
+          <form>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <button type="submit">Get started</button>
+          </form>
+          <div>
+            <p class="privacy-policy">
+              We care about your data in our
+              <a href="privacy.html">privacy policy</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boss-cont">
+      <div class="main-container">
+        <div class="search-container">
+          <div class="search-box">
+            <img
+              class="search-icon"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d16a570-4a4a-48bc-9615-c48b7a0657d0?"
+              alt="Search"
+            />
+            <div class="search-label">Search</div>
+          </div>
+          <div class="blog-categories">
+            <h5 class="categories-text">Blog categories</h5>
+            <div class="categories-list">
+              <div class="category">View all</div>
+              <div class="category" style="color: black">Fitness</div>
+              <div class="category" style="color: black">Nutrition</div>
+              <div class="category" style="color: black">Mental Health</div>
+              <div class="category" style="color: black">
+                Disease and Treatment
+              </div>
+              <div class="category" style="color: black">Public Health</div>
+              <div class="category" style="color: black">Sports Training</div>
+            </div>
+          </div>
+        </div>
+        <div class="holder-container">
+          <div class="card-container">
+            <div class="article-image">
+              <img src="assets/fun.webp" alt="" />
+            </div>
+            <div class="article">
+              <div id="art" class="article-header">
+                <p>Public Health</p>
+                <p>8 min read</p>
+              </div>
+              <div class="article-body">
+                <h2>Fun and Healthy Summer Activities for Kids</h2>
+                <p class="description">
+                  As the summer sun brightens our days, it brings along ample
+                  opportunities for fun, creativity...
+                </p>
+              </div>
+              <div class="article-footer">
+                <a href="./blogp2.html" target="_parent" class="read-article">
+                  Read article
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e2e27cd6-4e3b-487b-ab19-4233acbacf3e?"
+                    class="thumbnail"
+                  />
+                </a>
+              </div>
+
+              <div class="author">
+                <img
+                  loading="lazy"
+                  src="assets/Group 35.svg"
+                  class="author-image"
+                />
+                <div class="author-details">
+                  <div class="author-name">iDoc Team</div>
+                  <div class="publish-date">2 Nov 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="two-card-container">
+            <div class="card-container cc">
+              <div class="article-image" id="ai-2">
+                <img
+                  src="assets/tame-65511604239e1.webp"
+                  alt="health-related"
+                />
+              </div>
+              <div class="article" id="ar-2">
+                <div id="ar2" class="article-header">
+                  <p>Disease and Treatment</p>
+                  <p>8 min read</p>
+                </div>
+                <div class="article-body">
+                  <h2>Taming the Silent Killer</h2>
+                  <p class="description">
+                    We are delving into a significant health concern that
+                    affects millions of people worldwide...
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <a href="./blogp3.html" target="_parent" class="read-article"
+                    >Read article
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e2e27cd6-4e3b-487b-ab19-4233acbacf3e?"
+                      class="thumbnail"
+                    />
+                  </a>
+                </div>
+
+                <div class="author">
+                  <img
+                    loading="lazy"
+                    src="assets/Group 35.svg"
+                    class="author-image"
+                  />
+                  <div class="author-details">
+                    <div class="author-name">iDoc Team</div>
+                    <div class="publish-date">2 Nov 2023</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-container cc">
+              <div class="article-image" id="ai">
+                <img src="assets/health.webp" alt="health image" />
+              </div>
+              <div class="article" id="ar">
+                <div id="arr" class="article-header">
+                  <p>Fitness</p>
+                  <p>4 min read</p>
+                </div>
+                <div class="article-body">
+                  <h2>A Healthier Summer Guide</h2>
+                  <p class="description">
+                    Where we guide you on embracing a healthier and happier
+                    summer season...
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <a
+                    href="./blogpost.html"
+                    target="_parent"
+                    class="read-article"
+                    >Read article
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e2e27cd6-4e3b-487b-ab19-4233acbacf3e?"
+                      class="thumbnail"
+                    />
+                  </a>
+                </div>
+
+                <div class="author">
+                  <img
+                    loading="lazy"
+                    src="assets/Group 35.svg"
+                    class="author-image"
+                  />
+                  <div class="author-details">
+                    <div class="author-name">iDoc Team</div>
+                    <div class="publish-date">2 Nov 2023</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foooter">
+      <footer class="footer">
+        <div class="f-container-a">
+          <img loading="lazy" src="assets/group-34@2x.png" class="footer-img" />
+          <a href="index.html"></a>
+          <p class="footer-text">
+            iDoc is empowering personalized care through AI-driven telemedicine
+            and secure self-screening.
+          </p>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/mingcute_linkedin-line.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/simple-icons_x.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/Social link.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/Social link-1.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/line-md_youtube.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-container">
+          <div class="footer-column">
+            <h5>Products</h5>
+            <ul class="footer-column-list">
+              <li><a href="./feature.html">Features</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Company</h5>
+            <ul class="footer-column-list">
+              <li><a href="./company.html">About Us</a></li>
+              <li><a href="./advisor.html">Advertiser Portal</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Resources</h5>
+            <ul class="footer-column-list">
+              <li><a href="./blog.html">Blogs</a></li>
+              <li><a href="./faq.html">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Legal</h5>
+            <ul class="footer-column-list">
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="./terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        <div class="footer-bottom-1"></div>
+        <div class="footer-bottom-2">&copy; 2023 iDoc, All rights reserved</div>
+      </div>
+    </div>
+    <script>
+      const toggleBtn = document.getElementById("menu-button");
+      const navLinks = document.getElementById("nav-links");
+      toggleBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+      const toggleBtnn = document.getElementById("exit-button");
+      const navLinkss = document.getElementById("nav-links");
+      toggleBtnn.addEventListener("click", () => {
+        navLinkss.classList.toggle("show");
+      });
+      const toleBtn = document.getElementById("menu-button");
+      const nLinks = document.getElementById("section-right");
+      toleBtn.addEventListener("click", () => {
+        nLinks.classList.toggle("current");
+      });
+      const togleBtnn = document.getElementById("exit-button");
+      const ninkss = document.getElementById("section-right");
+      togleBtnn.addEventListener("click", () => {
+        ninkss.classList.toggle("current");
+      });
+      function highlightLink(link) {
+        // Remove 'active' class from all links
+        var links = document.querySelectorAll(" a.nav-link");
+        links.forEach(function (link) {
+          link.classList.remove("active");
+        });
+
+        // Add 'active' class to the clicked link
+        link.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

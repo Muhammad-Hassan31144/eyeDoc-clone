@@ -1,0 +1,217 @@
+body {
+  font-family: Montserrat, sans-serif;
+  color: #3b3b3b;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+article {
+  padding: 60px 0;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: 16px;
+  background-color: #fbfafd;
+  gap: 20px;
+  padding: 0 80px;
+  flex-wrap: wrap; /* Apply on small screens */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.contact-info h2 {
+  color: var(--black-font, #00030a);
+  font: 600 20px/160% Montserrat, sans-serif;
+}
+
+.contact-info p {
+  color: var(--black-300, #3b3b3b);
+  letter-spacing: 0.18px;
+  margin-top: 8px;
+  font: 400 18px/150% Montserrat, sans-serif;
+}
+
+.contact-button {
+  color: var(--Background, #fcfdfe);
+  white-space: nowrap;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: var(--purpel-600, #862996);
+  align-self: flex-start;
+  margin-top: 32px;
+  padding: 12px 20px;
+  font: 600 16px/150% Montserrat, sans-serif;
+}
+
+/* Apply styles for small screens */
+@media (max-width: 991px) {
+  .contact {
+    flex-direction: column;
+    padding: 0 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0;
+  }
+  .contact-info h2,
+  .contact-info p,
+  .contact-button {
+    max-width: 100%;
+  }
+  /* /* } */
+  .contact-button {
+    white-space: initial;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+  .btnholder {
+    padding-top: 0;
+  }
+}
+.btnholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 80px;
+}
+@media (max-width: 991px) {
+  .container {
+    padding: 30px 20px;
+  }
+}
+.content {
+  width: 960px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headera {
+  text-align: center;
+}
+.title {
+  color: #862996;
+  font: 600 16px/150% Montserrat, sans-serif;
+}
+.subtitle {
+  color: #00030a;
+  margin-top: 12px;
+  font: 700 36px/156% Montserrat, sans-serif;
+}
+.text {
+  color: #6e6e6e;
+  text-align: center;
+  margin-top: 24px;
+  max-width: 768px;
+  font: 400 20px/160% Montserrat, sans-serif;
+}
+.search-box {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  position: relative;
+}
+@media only screen and (max-width: 766px) {
+  .search-box {
+    width: 100%;
+  }
+}
+
+.search-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  margin-top: 12px;
+  margin-right: 10px; /* Add margin to separate icon from input */
+  position: absolute; /* Absolute positioning */
+  right: 14px; /* Adjust right position */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+}
+
+.search-label {
+  color: #b7b7b7;
+  font: 400 16px/150% Montserrat, sans-serif;
+  flex-grow: 1;
+}
+
+.search-box input {
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: #fcfdfe;
+  margin-top: 25px;
+  width: 320px;
+  max-width: 100%;
+  padding: 12px 14px;
+  flex-grow: 1;
+}
+/* header {
+  background-color: #fcfdfe;
+  padding: 40px 80px 97px;
+  text-align: center;
+} */
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+}
+p {
+  color: #00030a;
+}
+section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+h2 {
+  font-weight: 400;
+  color: #00030a;
+  font-size: 32px;
+}
+h3 {
+  color: #00030a;
+  font-weight: 500;
+}
+hr {
+  margin: 0;
+  opacity: 0.8;
+}
+.faq-item summary {
+  list-style: none;
+  padding-right: 30px; /* Adjust the padding as needed */
+  cursor: pointer;
+  font-weight: bold;
+  margin: 24px 0;
+  position: relative;
+  color: #00030a;
+}
+.faq-item p {
+  color: #6e6e6e;
+  font: 400 16px/160% Montserrat, sans-serif;
+}
+
+.faq-item summary::before {
+  content: "";
+  background: url("https://cdn.builder.io/api/v1/image/assets/TEMP/85a8f64b-00f1-4128-81ce-ff8d15a1acdf")
+    center right no-repeat;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scaleY(-1); /* Flip the image upside down */
+  width: 24px;
+  height: 24px;
+  right: 0;
+}

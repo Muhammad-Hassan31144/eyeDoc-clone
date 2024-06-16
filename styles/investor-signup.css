@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+
+}  
+.form-container {
+  display: flex;
+  border-radius: 60px;
+  background: #FBFAFD;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  justify-content: space-between;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 45%;
+}
+.form-header h1 {
+  color: #37246a;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+}
+.form-header h1 small {
+  color: #f15d9b;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px; /* 155.556% */
+}
+.form-header p {
+  color: var(--Grey-600, #8b8b8b);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+}
+.form-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.form-body .left,
+.form-body .right {
+  flex: 1;
+  min-width: 200px;
+}
+.form-body input,
+.form-body select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}
+.form-body input::placeholder,
+.form-body select::placeholder {
+  color: #cccccc;
+}
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.checkbox-container input {
+  margin-right: 10px;
+}
+.checkbox-container label {
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.checkbox-container label a {
+  color: #ff6699;
+  text-decoration: underline;
+}
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#investorForm {
+  width: 45%;
+}
+.form-footer button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  color: #fff;
+  font-size: 16px;
+  cursor: not-allowed;
+}
+.form-footer button.active {
+  background-color: #f9a9f9;
+  cursor: pointer;
+}
+@media (max-width: 746px) {
+  .form-container {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .form-header {
+    width: 100%;
+  }
+  #investorForm {
+    width: 100%;
+  }
+  .form-body{
+      width: 100%;
+      flex-direction: column;
+  }
+  .form-header h1 {
+      font-size: 28px; /* Decrease font size for smaller screens */
+      line-height: 42px; /* Adjust line height accordingly */
+    }
+    .form-header h1 small {
+      font-size: 28px; /* Decrease font size for smaller screens */
+      line-height: 42px; /* Adjust line height accordingly */
+    }
+    .form-header p {
+      font-size: 16px; /* Decrease font size for smaller screens */
+      line-height: 24px; /* Adjust line height accordingly */
+    }
+  .form-footer button {
+    width: calc(100% - 20px);
+  }
+}
+
+label {
+  color: #3b3b3b;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Features</title>
+    <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+    <link rel="stylesheet" href="./styles/header-footer.css" />
+    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="16x16 32x32 48x48"
+      href="favicon.ico?"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/features.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-in">
+        <div class="section-left">
+          <div class="top-section">
+            <a href="index.html">
+              <img loading="lazy" src="assets/group-34@2x.png" class="logo" />
+            </a>
+            <nav class="nav-links" id="nav-links">
+              <div class="menu">
+                <button id="exit-button" style="height: 32px; width: 32px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="2rem"
+                    width="2rem"
+                    viewBox="0 0 384 512"
+                  >
+                    <style>
+                      svg {
+                        fill: #863396;
+                      }
+                    </style>
+                    <path
+                      d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <a
+                href="index.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Home</a
+              >
+              <a
+                href="company.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Company</a
+              >
+              <a
+                href="feature.html"
+                class="nav-link active"
+                onclick="highlightLink(this)"
+                >Features</a
+              >
+              <a href="blog.html" class="nav-link" onclick="highlightLink(this)"
+                >Blogs</a
+              >
+              <a
+                href="contact.html"
+                class="nav-link"
+                onclick="highlightLink(this)"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="section-right" id="section-right">
+          <a href="download.html" class="nav-link" onclick="highlightLink(this)"
+            >Download the App</a
+          >
+          <a href="advisor.html" class="download-app active">
+            Advertiser Portal</a
+          >
+        </div>
+        <div class="menu">
+          <button id="menu-button" style="height: 32px; width: 32px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2.5rem"
+              width="2.5rem"
+              viewBox="0 0 448 512"
+            >
+              <style>
+                svg {
+                  fill: #862996;
+                }
+              </style>
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <style>
+      .damnit {
+        background-color: #fbfafd;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 80px 0 80px;
+      }
+      @media (max-width: 991px) {
+        .damnit {
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 40px;
+        }
+      }
+      .dammmn {
+        align-self: center;
+        color: var(--black-300, #3b3b3b);
+        width: 700px;
+        max-width: 100%;
+        margin: 20px 16px 0 0;
+        font: 400 17px/26px Montserrat, sans-serif;
+      }
+      @media (max-width: 991px) {
+        .dammmn {
+          margin-right: 10px;
+        }
+      }
+    </style>
+
+    <section class="feature">
+      <header class="feature-header">
+        <h2>Features</h2>
+        <h1>Health Check Kiosk</h1>
+        <article class="feature-description">
+          <p>
+            Introducing the Health Check Kiosk feature in our iDoc healthcare
+            app, <br class="blocker" />
+            bringing convenience to your healthcare journey. Strategically
+            located at <br class="blocker" />
+            local stores, pharmacies, and malls, our kiosks provide real-time
+            vitals like <br class="blocker" />
+            heart rate, blood pressure, and more. Access results instantly on
+            the iDoc <br class="blocker" />
+            app, making health monitoring effortless and accessible anywhere.
+          </p>
+        </article>
+      </header>
+    </section>
+    <div class="div">
+      <section id="al" class="feature-div">
+        <div class="wrapperr">
+          <div class="fig-div">
+            <figure class="health-metric">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c59155d-a07f-41c7-bb23-09643404e77f?"
+                class="health-icon"
+                alt="Health Metric Icon"
+              />
+              <figcaption>
+                <h2>Comprehensive Health Metrics</h2>
+                <p>
+                  Our kiosk measures an extensive range of health parameters,
+                  giving you a comprehensive picture of your overall health
+                  status. We bring the 98% accuracy and reliability.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure class="health-metric">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/3051adbf-8cf6-4a33-ada4-cfa0dc8c8f3d?"
+                class="health-icon"
+                alt="Health Metric Icon"
+              />
+              <figcaption>
+                <h2>Instant answers</h2>
+                <p>
+                  Get immediate feedback on your vitals. You no longer have to
+                  wait for a doctor's appointment or lab results. The Health
+                  Check Kiosk delivers instant, accurate results right on your
+                  screen and iDoc App.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="fig-div">
+            <figure class="health-metric">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/587d9a89-a14a-4957-aab1-11a162afc10d?"
+                class="health-icon"
+                alt="Health Metric Icon"
+              />
+              <figcaption>
+                <h2>Personalized Feedback</h2>
+                <p>
+                  Our system interprets your results and provides personalized
+                  recommendations based on your vitals. This helps you
+                  understand your health better and guides you towards necessary
+                  lifestyle changes or medical attention.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="health-metric">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/54d43c77-a1d5-45ba-8805-5c3dfd0a9d9e?"
+                class="health-icon"
+                alt="Health Metric Icon"
+              />
+              <figcaption>
+                <h2>Privacy Guaranteed</h2>
+                <p>
+                  We take your privacy seriously. Your health data is securely
+                  encrypted and stored.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="column-4">
+          <img src="assets/Hand-drawn arrow.png" alt="arrwo" class="arrow" />
+          <img loading="lazy" src="assets/Mockup wrap (13).png" class="imgg" />
+        </div>
+      </section>
+    </div>
+
+    <!-- 2nd -->
+    <div class="feeat">
+      <section class="damnit">
+        <header class="dammmn">
+          <h1>Symptom Checker</h1>
+          <p>
+            Navigating through health concerns has never been easier with our
+            state-of-the-art Symptom Checker feature. Designed with the user in
+            mind, this feature offers you the convenience of a preliminary
+            medical consultation at your fingertips.
+            <br />
+            Our Symptom Checker is your personal, digital diagnostician. It
+            empowers you to identify potential health conditions based on the
+            symptoms you are experiencing, paving the way for timely medical
+            attention and better health outcomes.
+          </p>
+        </header>
+      </section>
+      <div class="div">
+        <div class="column-4">
+          <img src="assets/Hand-drawn arrow.png" alt="arrow" class="arrow-2" />
+          <img loading="lazy" src="assets/Mockup wrap (7).png" class="imgg" />
+        </div>
+        <section class="feature-div">
+          <div class="wrapperr">
+            <div class="fig-div">
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b02cb65-aafc-48e8-afe8-13f33bcaf525?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Effortless Symptom Input</h2>
+                  <p>
+                    Easily log your symptoms into our intuitive interface. The
+                    Symptom Checker is designed to understand a wide range of
+                    symptoms, allowing you to accurately describe what you're
+                    experiencing.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b140c61-c720-40e3-8b36-dbc34b81b288?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>AI-Powered Analysis</h2>
+                  <p>
+                    Leveraging advanced artificial intelligence and machine
+                    learning technologies, our Symptom Checker processes your
+                    inputs to deliver the most probable conditions that align
+                    with your symptoms.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="fig-div">
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4e7663c-67fa-4c51-9313-b4f5a6905bc0?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Instant, Accurate Results</h2>
+                  <p>
+                    Say goodbye to uncertain web searches. Our Symptom Checker
+                    provides instant and reliable health information, derived
+                    from an extensive database of medical knowledge.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e9561556-0a0e-4841-a06c-ae554375b329?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Personalized Health Guidance</h2>
+                  <p>
+                    The Symptom Checker does more than just identify possible
+                    conditions. It offers personalized health guidance based on
+                    the reported symptoms, steering you towards the appropriate
+                    medical attention or self-care strategies.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- 3rd -->
+    <div class="feeat">
+      <section class="feature">
+        <header class="feature-header">
+          <h1>Medical Encyclopedia</h1>
+          <article class="feature-description">
+            <p>
+              Empower your healthcare journey with our comprehensive Medical<br
+                class="blocker"
+              />
+              Encyclopedia feature, a reservoir of knowledge and a trusted
+              companion for<br class="blocker" />
+              your health-related queries. Our feature is designed to
+              <br class="blocker" />offer easy access to reliable medical
+              information, making it simpler for you to understand and manage
+              your health.
+              <br class="blocker" />
+              Our Medical Encyclopedia serves as your personal, digital library,
+              featuring a<br class="blocker" />
+              wealth of content on a broad spectrum of medical topics. From
+              general<br class="blocker" />
+              health conditions to specific diseases, treatments, and preventive
+              measures, <br class="blocker" />our Encyclopedia has got you
+              covered.
+            </p>
+          </article>
+        </header>
+      </section>
+
+      <div class="div">
+        <section id="be" class="feature-div">
+          <div class="wrapperr">
+            <div class="fig-div">
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba43161e-82b1-4ca2-92b0-2a05242ad487?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Extensive Knowledge Base</h2>
+                  <p>
+                    The Encyclopedia hosts an extensive database of health
+                    topics, providing accurate information on an array of
+                    diseases, symptoms, treatments, and preventative care, all
+                    vetted by healthcare professionals.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/35b38f1f-5cb5-4465-b90a-5e364f853e0a?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>User-friendly Navigation</h2>
+                  <p>
+                    Designed with user experience in mind, the Encyclopedia is
+                    easy to navigate. It allows you to browse through categories
+                    or search specific topics, leading you straight to the
+                    information you need.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="fig-div">
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb2c4889-9cb2-4ab3-8364-f9549690ba39?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Understandable Language</h2>
+                  <p>
+                    Medical jargon can be confusing. That's why our Encyclopedia
+                    presents information in easy-to-understand, layman's terms.
+                    It’s like having a knowledgeable friend explain complex
+                    health issues in a simple, relatable manner.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d64872d3-e84a-48a7-b848-fb6b41aaa3d6?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Regular Updates</h2>
+                  <p>
+                    As the world of medicine continually evolves, so does our
+                    Encyclopedia. We regularly update our content, ensuring you
+                    receive the most current and relevant medical information.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="column-4">
+            <img src="assets/Hand-drawn arrow.png" alt="" class="arrow-3" />
+            <img loading="lazy" src="assets/Mockup wrap (8).png" class="imgg" />
+          </div>
+        </section>
+      </div>
+    </div>
+    <style></style>
+    <!-- 4th -->
+    <section class="damnit">
+      <header class="dammmn">
+        <h1>Exercises</h1>
+        <p>
+          Unleash your potential and step up your fitness game with our dynamic
+          Exercise Workouts feature. This feature transforms your device into a
+          personal fitness trainer, offering you a variety of workouts tailored
+          to your specific needs and goals. Our Exercise Workouts feature is
+          your comprehensive fitness companion, providing you with a selection
+          of exercises across various disciplines, from cardio and strength
+          training to yoga and flexibility workouts.
+        </p>
+      </header>
+    </section>
+    <div class="feeat">
+      <div class="div">
+        <section class="feature-div">
+          <div class="column-4">
+            <img src="assets/Hand-drawn arrow.png" alt="" class="arrow-4" />
+            <img loading="lazy" src="assets/Mockup wrap (9).png" class="imgg" />
+          </div>
+          <div class="wrapperr">
+            <div class="fig-div">
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/15da1639-8680-4c88-a09b-5f292a9f3ca3?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Personalized Workouts</h2>
+                  <p>
+                    Our feature creates personalized exercise routines based on
+                    your fitness goals, physical ability, and preferences.
+                    Whether you aim to lose weight, build muscle, or enhance
+                    flexibility, our workouts are curated just for you.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc539f60-9c52-4406-ba20-c43d1f96343e?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Extensive Exercise Library</h2>
+                  <p>
+                    With an extensive library of exercises, our feature offers
+                    something for everyone, irrespective of fitness level or
+                    experience. Each exercise is accompanied by detailed
+                    instructions and visual aids to ensure correct form and
+                    technique.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="fig-div">
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9087563-b9af-4079-809e-c5543f43ef9a?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Integrated Health Metrics</h2>
+                  <p>
+                    It keeps you challenged, motivated, and on track towards
+                    achieving your fitness goals.
+                    <br />
+                    Integrated Health Metrics: The Exercise Workouts feature
+                    seamlessly integrates with other features in our app,
+                    providing a holistic view of your health. Track how your
+                    workouts impact your vitals and overall health for a
+                    complete health management experience.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/560bd4c1-5b6f-4079-99aa-56ea3054659f?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Interactive and Engaging</h2>
+                  <p>
+                    Turn workouts into fun sessions with our interactive
+                    feature. Enjoy animated demonstrations, voice cues, and
+                    real-time performance feedback to keep your workouts
+                    engaging and effective.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <style></style>
+    <!-- 5th -->
+    <section class="feature">
+      <header class="feature-header">
+        <h1>Nutritions and Recipe Data</h1>
+        <article class="feature-description">
+          <p>
+            Revolutionize the way you approach your diet with our Nutritions
+            and<br class="blocker" />
+            Recipe Data feature. This feature is a comprehensive tool that
+            provides<br class="blocker" />
+            detailed nutritional information for a wide array of food items,
+            coupled with <br class="blocker" />a database of diverse recipes to
+            cater to your culinary cravings while<br class="blocker" />
+            promoting healthier food choices.
+            <br />
+            Our Nutritions and Recipe Data feature is like having a personal
+            dietitian and <br class="blocker" />a gourmet chef at your
+            fingertips, offering insights into what you eat and<br
+              class="blocker"
+            />
+            inspiring ways to enjoy nutritious, delicious meals.
+          </p>
+        </article>
+      </header>
+    </section>
+    <div class="feeat">
+      <div class="div">
+        <section id="ga" class="feature-div">
+          <div class="wrapperr">
+            <div class="fig-div">
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3825d6c-670d-45c8-870f-780952d56217?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Extensive Nutritional Database</h2>
+                  <p>
+                    With information on more than 100,000 food items, our
+                    feature offers detailed nutritional data, including
+                    calories, protein, fats, carbohydrates, vitamins, and
+                    minerals. It's your ultimate guide to understanding the
+                    nutritional content of your meals.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0fe55981-91e4-4daa-8ded-349150ba7a0e?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Diverse Recipe Library</h2>
+                  <p>
+                    Get access to a rich collection of recipes that cater to
+                    various dietary preferences, including vegetarian, vegan,
+                    low-carb, gluten-free, and more. Each recipe comes with a
+                    detailed nutritional breakdown, so you know exactly what
+                    goes into your body.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="fig-div">
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/315e7f0e-af69-431d-9227-7dff874e81c4?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>AI-Powered Meal Planning</h2>
+                  <p>
+                    Leverage the power of artificial intelligence to generate
+                    meal plans that meet your nutritional needs and taste
+                    preferences. Our feature can help plan your meals for the
+                    week, taking the stress out of healthy eating.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="health-metric">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d95d08f4-d88c-44da-b558-8fd5558b60cf?"
+                  class="health-icon"
+                  alt="Health Metric Icon"
+                />
+                <figcaption>
+                  <h2>Interactive Interface</h2>
+                  <p>
+                    Our feature comes with an intuitive, user-friendly interface
+                    that makes navigating through nutritional data and recipes a
+                    breeze.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="column-4">
+            <img src="assets/Hand-drawn arrow.png" alt="" class="arrow-5" />
+            <img
+              loading="lazy"
+              src="assets/Mockup wrap (10).png"
+              class="imgg"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+    <style></style>
+    <style>
+      .column-4 {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        /* margin-left: 20px; */
+        position: relative;
+      }
+      @media (max-width: 991px) {
+        .column-4 {
+          width: 100%;
+        }
+      }
+      /* .imgg {
+        aspect-ratio: 1.03;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        overflow: hidden;
+        margin: auto 0;
+      }
+      @media (max-width: 991px) {
+        .imgg {
+          max-width: 100%;
+          margin-top: 40px;
+        }
+      } */
+
+      /* #de.feature-div > .column-4 {
+        width: 50%;
+      } */
+      .ul-holder {
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+        margin-left: 20px;
+      }
+    </style>
+    <!-- 6th -->
+    <style></style>
+    <section class="damnit">
+      <header class="dammmn">
+        <h1>Custom Diet Plan</h1>
+        <p>
+          We understand that when it comes to health and nutrition, one size
+          does not fit all. With our unique Custom Diet Plan feature, users can
+          now benefit from personalized meal strategies tailored to their
+          individual goals and preferences.
+        </p>
+      </header>
+    </section>
+    <div class="feeat">
+      <div class="div">
+        <section id="de" class="feature-div">
+          <div class="column-4">
+            <img src="assets/Hand-drawn arrow.png" alt="" class="arrow-6" />
+            <img
+              loading="lazy"
+              src="assets/Mockup wrap (11).png"
+              class="imgg"
+            />
+          </div>
+          <div class="ul-holder">
+            <ul class="ul">
+              <li>
+                iDoc connects users with certified nutrition experts who assess
+                individual dietary needs based on personal health data,
+                lifestyle, dietary preferences, and health goals. Whether you're
+                looking to lose weight, gain muscle, manage a medical condition,
+                or simply improve your overall well-being, our nutrition experts
+                can devise a diet plan tailored just for you.
+              </li>
+
+              <li>
+                The process is simple and convenient. After users input their
+                dietary preferences, health data, and goals, our nutrition
+                experts go to work, creating a custom diet plan. This plan not
+                only incorporates a variety of nutrient-rich foods to promote
+                overall health but also considers personal food preferences to
+                ensure the plan is enjoyable and sustainable.
+              </li>
+
+              <li>
+                These diet plans are easily accessible within the app, and users
+                can track their progress and adapt the plan based on the changes
+                in their health statistics and goals. Users also have the option
+                to consult with nutrition experts within the app, enabling
+                real-time adjustments to the diet plan.
+              </li>
+
+              <li>
+                By merging health technology with professional nutritional
+                expertise, our Custom Diet Plan feature makes personalized
+                nutrition accessible and practical, putting you on a path
+                towards achieving your health goals. It's like having a personal
+                nutritionist, right at your fingertips!
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- 7th -->
+    <div class="feeat">
+      <section class="feature">
+        <header class="feature-header">
+          <h1>Nearby Gym</h1>
+          <article class="feature-description">
+            <p>
+              Staying active and finding the right fitness facility shouldn't be
+              a chore. With our innovative Nearby Gym feature, users can
+              conveniently discover gyms and fitness centers located around
+              their current location.
+            </p>
+          </article>
+        </header>
+      </section>
+
+      <div class="div">
+        <section class="feature-div">
+          <div class="ul-holder">
+            <ul class="ul">
+              <li>
+                Our app does the hard work for you, identifying the proximity of
+                gyms, providing key information such as operation hours,
+                pricing, and contact details. It's like having a personal
+                fitness concierge service in your pocket! This feature is
+                designed to support users in maintaining an active lifestyle by
+                making gym access as effortless as possible.
+              </li>
+
+              <li>
+                Users can peruse through gym profiles and make informed
+                decisions based on provided details. Each gym profile includes
+                comprehensive information such as types of equipment available,
+                variety of classes offered, special facilities such as pools or
+                saunas, and even user ratings and reviews. This allows users to
+                choose a gym that aligns with their fitness goals, preferences,
+                and budget.
+              </li>
+
+              <li>
+                Moreover, real-time navigation features make it easier for users
+                to locate the gym, eliminating the hassle of searching for
+                directions. The app also provides users with the option to
+                contact the gym directly through the integrated contact
+                features, facilitating inquiries and membership registrations.
+              </li>
+
+              <li>
+                Our Nearby Gym feature streamlines the process of finding the
+                right fitness environment for our users, proving that no matter
+                where you are, your fitness journey can continue uninterrupted.
+                Fitness made accessible, that's our goal
+              </li>
+            </ul>
+          </div>
+          <div class="column-4">
+            <img src="assets/Hand-drawn arrow.png" alt="" class="arrow-7" />
+            <img
+              loading="lazy"
+              src="assets/Mockup wrap (12).png"
+              class="imgg"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+    <style></style>
+    <section class="space"></section>
+    <!-- footer -->
+
+    <div class="foooter">
+      <footer class="footer">
+        <div class="f-container-a">
+          <a href="index.html"
+            ><img
+              loading="lazy"
+              src="assets/group-34@2x.png"
+              class="footer-img"
+          /></a>
+          <p class="footer-text">
+            iDoc is empowering personalized care through AI-driven telemedicine
+            and secure self-screening.
+          </p>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/mingcute_linkedin-line.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/simple-icons_x.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/Social link.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/Social link-1.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img loading="lazy" src="icons/line-md_youtube.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-container">
+          <div class="footer-column">
+            <h5>Products</h5>
+            <ul class="footer-column-list">
+              <li><a href="./feature.html">Features</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Company</h5>
+            <ul class="footer-column-list">
+              <li><a href="./company.html">About Us</a></li>
+              <li><a href="./advisor.html">Advertiser Portal</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Resources</h5>
+            <ul class="footer-column-list">
+              <li><a href="./blog.html">Blogs</a></li>
+              <li><a href="./faq.html">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Legal</h5>
+            <ul class="footer-column-list">
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="./terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        <div class="footer-bottom-1"></div>
+        <div class="footer-bottom-2">&copy; 2023 iDoc, All rights reserved</div>
+      </div>
+    </div>
+    <script>
+      const toggleBtn = document.getElementById("menu-button");
+      const navLinks = document.getElementById("nav-links");
+      toggleBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+      const toggleBtnn = document.getElementById("exit-button");
+      const navLinkss = document.getElementById("nav-links");
+      toggleBtnn.addEventListener("click", () => {
+        navLinkss.classList.toggle("show");
+      });
+      const toleBtn = document.getElementById("menu-button");
+      const nLinks = document.getElementById("section-right");
+      toleBtn.addEventListener("click", () => {
+        nLinks.classList.toggle("current");
+      });
+      const togleBtnn = document.getElementById("exit-button");
+      const ninkss = document.getElementById("section-right");
+      togleBtnn.addEventListener("click", () => {
+        ninkss.classList.toggle("current");
+      });
+      function highlightLink(link) {
+        // Remove 'active' class from all links
+        var links = document.querySelectorAll(" a.nav-link");
+        links.forEach(function (link) {
+          link.classList.remove("active");
+        });
+
+        // Add 'active' class to the clicked link
+        link.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
